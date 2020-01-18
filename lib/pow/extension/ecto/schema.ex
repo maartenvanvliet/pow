@@ -25,7 +25,7 @@ defmodule Pow.Extension.Ecto.Schema do
         end
 
         def changeset(user_or_changeset, attrs) do
-          user
+          user_or_changeset
           |> pow_changeset(attrs)
           |> pow_extension_changeset(attrs)
         end
